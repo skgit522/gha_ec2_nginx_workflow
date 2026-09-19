@@ -5,13 +5,13 @@ on:
 
 jobs:
   code:
-    uses: ./.github/workflows/code.yml # this is how workflow is called
+    uses: ./.github/workflows/code.yaml # this is how workflow is called
   build:
     needs: code
-    uses: ./.github/workflows/build.yml
+    uses: ./.github/workflows/build.yaml
   test:
     needs: build
-    uses: ./.github/workflows/test.yml
+    uses: ./.github/workflows/test.yaml
   deploy:
     needs: test
-    uses: ./.github/workflows/deploy.yml
+    uses: ./.github/workflows/deploy.yaml
