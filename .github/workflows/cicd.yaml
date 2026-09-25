@@ -1,4 +1,4 @@
-name: CICD_Pipeline
+name: CICD_Pipeline_selfhosted
 
 on:
   workflow_dispatch: # Enables manual triggering
